@@ -18,8 +18,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Style+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header container">
-        <a class="header__logo" href="/">
+    <header data-cy="header" class="header container">
+        <a data-cy="icon" class="header__logo" href="/">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-camera" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                 <path d="M5 7h1a2 2 0 0 0 2 -2a1 1 0 0 1 1 -1h6a1 1 0 0 1 1 1a2 2 0 0 0 2 2h1a2 2 0 0 1 2 2v9a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2" />
@@ -28,12 +28,12 @@
             <h1>Photo<span>Nature</span></h1>
         </a>
         <nav class="links">
-            <a class="links__item" href="/">Home</a>
-            <a class="links__item" href="/gallery.html">Gallery</a>
-            <a class="links__item" href="/about.html">About me</a>
+            <a data-cy="home" class="links__item" href="/">Home</a>
+            <a data-cy="gallery" class="links__item" href="/gallery.html">Gallery</a>
+            <a data-cy="about" class="links__item" href="/about.html">About me</a>
         </nav>
     </header>
-    <main class="main container">
+    <main data-cy="main-index" class="main container">
         <div class="main__image">
             <picture>
                 <source srcset="img/webp/Park-Of-Coffee.webp" type="image/webp"/>
@@ -55,8 +55,8 @@
         </div>
     </main>
 
-    <section class="images-information container">
-        <h2>know Our Planet</h2>
+    <section data-cy="know" class="images-information container">
+        <h2 data-cy="know-title">know Our Planet</h2>
         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-world" width="150" height="150" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
             <circle cx="12" cy="12" r="9" />
@@ -68,13 +68,13 @@
         <p>The planet Earth is our home, we lived by day and gives us everything we need, has incredible landscapes, animals and plants that you will know through our images.</p>
     </section>
 
-    <div class="gallery container">
-        <h2>Gallery</h2>
+    <div data-cy="gallery-section" class="gallery container">
+        <h2 data-cy="gallery-section-title">Gallery</h2>
         <div class="gallery__container"></div>
         <a href="/gallery.html" class="button">See All</a>
     </div>
 
-    <footer class="footer container">
+    <footer data-cy="footer" class="footer container">
         <div class="footer__user">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-code-2" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -85,7 +85,7 @@
             </svg>
             <p>JCode</p>
         </div>
-        <p>All rights reserved 2021 &copy;</p>
+        <p data-cy="copy">All rights reserved 2021 &copy;</p>
     </footer>
     <script src="js/install-sw.js"></script>
     <script src="js/app.js" type="module"></script>

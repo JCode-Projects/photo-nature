@@ -17,6 +17,7 @@ export default class UserInterface {
 
             const imageDiv = document.createElement('div');
             imageDiv.classList.add('gallery__photo');
+            imageDiv.dataset.cy = 'image';
             imageDiv.innerHTML = `
                 <div class="gallery__photo__image">
                     <picture>
@@ -28,7 +29,7 @@ export default class UserInterface {
                 <div class="gallery__photo__info">
                     <h2>${title}</h2>
                     <p>${description}</p>
-                    <a href="#">See More</a>
+                    <a data-cy="show-image" href="#">See More</a>
                 </div>
             `;
 
@@ -55,7 +56,7 @@ export default class UserInterface {
                     <img src="${webp}" alt="${title}">
                 </picture>
                 <p>${description}</p>
-                <a href="#">Cerrar</a>
+                <a data-cy="hidden-image" href="#">Cerrar</a>
             </div>
         `;
 

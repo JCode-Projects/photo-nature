@@ -10,11 +10,9 @@
   "author": "JCode",
   "license": "ISC",
   "devDependencies": {
+    "cypress": "^8.2.0",
     "gulp": "^4.0.2",
     "gulp-image": "^6.2.1",
     "gulp-webp": "^4.0.1"
-  },
-  "dependencies": {
-    "esm": "^3.2.25"
   }
 }
