@@ -1,0 +1,20 @@
+{
+  "name": "gallery",
+  "version": "1.0.0",
+  "description": "Creating a gallery",
+  "main": "index.js",
+  "module": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JCode",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-image": "^6.2.1",
+    "gulp-webp": "^4.0.1"
+  },
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}
